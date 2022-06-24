@@ -1,9 +1,9 @@
-import {AgeCalculator} from './../src/js/ageCalculator.js';
+import {ageCalculator} from '../src/js/ageCalculator.js';
 
-describe('AgeCalculator', () => {
+describe('ageCalculator', () => {
   let calc;
   beforeEach(() => {
-    calc = new AgeCalculator(25);
+    calc = new ageCalculator(25);
   });
 
 
