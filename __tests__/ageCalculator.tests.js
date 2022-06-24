@@ -10,4 +10,9 @@ describe('ageCalculator', () => {
   test('should correctly return a new calc object with the age property', () => {
     expect(calc.age).toEqual(25)
   });
+  test('should correctly return a new age in Mercury years', () => {
+    let ageOnMercury = (Math.floor(age / .24));
+
+    return ageOnMercury;
+  });
 });
