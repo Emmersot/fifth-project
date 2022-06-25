@@ -1,35 +1,48 @@
-# (Application Name)
+# _Super Galactic Age Calculator_
 
-#### (Brief Description of Application)
+#### By: _**Tyler Emmerson**_
 
-#### By (Your Name Here)
+#### _A website for inputting an age to compare it to your life expectancy and age on other planets._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _JavaScript_
+* _jQuery_
+* _GitHub repositories_
+* _GitHub Pages_
 
 ## Description
 
+_The website will allow users to input an age on earth and get to compare it to your life expectancy and age on other planets._
+
+## Tests
+
+
+## GitHub Pages
+_View the project here:_
+
 ## Setup/Installation Requirements
 
-* _clone repo to pc_
-* _ `$ npm install`_
-* _ `$ npm ci`_
-* _`$ npm install webpack@4.39.3 --save-dev --save-exact`_
-* _`$ npm install webpack-cli@3.3.8 --save-dev`_
-* _`$ npm install webpack-dev-server@3.8.0 --save-dev --save-exact`_
-* _`$ npm audit fix --force`_
-* _`$ npm run build`_
-* _`$ npm run start`_
+* Navigate to https://github.com/emmersot/fifth-project
+* Click on the green "Code" button and copy the repository URL or click on the copy button
+* Open the terminal on your desktop
+* Once in the terminal, use it to navigate to your desktop folder
+* Once inside your desktop folder, use the command `git clone https://github.com/emmersot/fifth-project.git`
+* After cloning the project, navigate into it using the command `cd fifth-project`
+* Use the command `git remote` to confirm the creation of the new local repository
+* Open the project with the code editor of your choice
 
 ## Known Bugs
+* _confused_
 
-* _Any known issues_
-* _should go here_
+## Contact Information
+_Tyler Emmerson, TylerEmmerson0216@gmail.com_
 
 ## License
 
-## Contact Information
+_MIT License: https://opensource.org/licenses/MIT_
+
+Copyright (c) _2022_ _Tyler Emmerson_
