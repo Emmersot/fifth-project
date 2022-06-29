@@ -36,10 +36,10 @@ export default class ageCalculator {
     this.mars = Math.floor(this.earth / 1.88);
     return this.mars;
   }
-  jupiterAge() {
-    this.jupiter = Math.floor(this.earth / 11.86);
-    return this.jupiter;
-  } 
+  // jupiterAge() {
+  //   this.jupiter = Math.floor(this.earth / 11.86);
+  //   return this.jupiter;
+  // } 
 
   lifeExpectancy() {
     if(this.gender === "female") {
