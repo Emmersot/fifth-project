@@ -7,8 +7,12 @@ describe('ageCalculator', () => {
     calc = new ageCalculator(25);
   });
 
-  test('should correctly return a new calc object with the age property', () => {
+  test1('should correctly return a new calc object with the age property', () => {
     expect(calc.earth).toEqual(25);
-  
   });
+
+  test2('should return users age on mercury', () => {
+    expect(calc.mercuryAge()).toEqual(104);
+  });
+
 });
