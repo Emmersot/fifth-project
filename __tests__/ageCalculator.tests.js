@@ -8,7 +8,7 @@ describe('ageCalculator', () => {
   });
 
   test('should correctly return a new calc object with the age property', () => {
-    expect(calc.age).toEqual(25);
+    expect(calc.earth).toEqual(25);
   
   });
 });
