@@ -32,10 +32,10 @@ export default class ageCalculator {
     this.venus = Math.floor(this.earth / 0.62);
     return this.venus;
   }
-  // marsAge() {
-  //   this.mars = Math.floor(this.earth / 1.88);
-  //   return this.mars;
-  // }
+  marsAge() {
+    this.mars = Math.floor(this.earth / 1.88);
+    return this.mars;
+  }
   jupiterAge() {
     this.jupiter = Math.floor(this.earth / 11.86);
     return this.jupiter;
