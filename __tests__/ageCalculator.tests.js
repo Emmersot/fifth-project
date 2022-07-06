@@ -27,14 +27,23 @@ describe('ageCalculator', () => {
     expect(calc.jupiterAge()).toEqual(2);
   });
   
-  test('should set a lifeExpectancy value based on a if else statement for gender female', () => {
+  test('should set a lifeExpectancy value based on a if else statement for gender female to return years left for earth', () => {
     let female = new ageCalculator(25, "female");
     expect(female.lifeExpect()).toEqual(53);
   });
 
-  test('should set a lifeExpectancy value based on a if else statement for gender female', () => {
+  test('should set a lifeExpectancy value based on a if else statement for gender male to return years left for earth', () => {
     let male = new ageCalculator(25, "male");
     expect(male.lifeExpect()).toEqual(46);
   });
-});
 
+  test('should calculate the time a female has lived passed lifeExpect on mercury', () => {
+    let female = new ageCalculator(25, "female");
+    female.deathInYears()
+    console.log(female);
+    expect(female.mercury).toEqual(-26);
+    expect(female.venus).toEqual(38);
+    expect(female.mars).toEqual(65);
+    expect(female.jupiter).toEqual(76);
+  });
+});
