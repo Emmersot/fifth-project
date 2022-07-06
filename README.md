@@ -34,6 +34,9 @@ _View the project here:_
 * After cloning the project, navigate into it using the command `cd fifth-project`
 * Use the command `git remote` to confirm the creation of the new local repository
 * Open the project with the code editor of your choice
+* Install packages with `npm install`
+* Create the build with `npm run build`
+* launch with `npm run start`
 
 ## Known Bugs
 * _confused_
