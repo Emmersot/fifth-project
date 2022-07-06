@@ -31,5 +31,10 @@ describe('ageCalculator', () => {
     let female = new ageCalculator(25, "female");
     expect(female.lifeExpect()).toEqual(53);
   });
+
+  test('should set a lifeExpectancy value based on a if else statement for gender female', () => {
+    let male = new ageCalculator(25, "male");
+    expect(male.lifeExpect()).toEqual(46);
+  });
 });
 
