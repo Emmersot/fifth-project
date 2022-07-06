@@ -51,9 +51,9 @@ describe('ageCalculator', () => {
     let male = new ageCalculator(25, "male");
     male.deathInYears()
     console.log(male);
-    expect(male.mercury).toEqual(-29);
-    expect(male.venus).toEqual(38);
-    expect(male.mars).toEqual(65);
-    expect(male.jupiter).toEqual(76);
+    expect(male.mercury).toEqual(-33);
+    expect(male.venus).toEqual(31);
+    expect(male.mars).toEqual(58);
+    expect(male.jupiter).toEqual(69);
   });
 });

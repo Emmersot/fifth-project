@@ -13,16 +13,15 @@
 // A Mars year is 1.88 Earth years.
 // A Jupiter year is 11.86 Earth years.
 export default class ageCalculator {
-  constructor (age, life, lifeExpectancy, gender, mercury, venus, mars, jupiter) {
+  constructor (age, gender, lifeExpectancy, lifeLeft, mercury, venus, mars, jupiter) {
     this.earth = age;
+    this.gender = gender;
     this.lifeExpectancy = lifeExpectancy;
-    this.life = life;
+    this.lifeLeft = lifeLeft;
     this.mercury = mercury;
     this.venus = venus;
     this.mars = mars;
     this.jupiter = jupiter;
-    this.gender = gender;
-    
   }
   mercuryAge(){
     this.mercury = Math.floor(this.earth / 0.24);
@@ -41,31 +40,33 @@ export default class ageCalculator {
     return this.jupiter;
   } 
 
-  lifeExpectancy() {
-    if(this.gender === "female") {
+  lifeExpect() {
+    if (this.gender === "female") {
       this.lifeExpectancy = 78;
-      this.life = this.lifeExpectancy - this.earth;
-      return this.life;
+      this.lifeLeft = this.lifeExpectancy - this.earth;
+      return this.lifeLeft;
     } else if (this.gender === "male") {
-      this.life = this.lifeExpectancy - this.earth;
-      return this.life;
+      this.lifeExpectancy = 71;
+      this.lifeLeft = this.lifeExpectancy - this.earth;
+      return this.lifeLeft;
     }
   }
 
   deathInYears() {
     if(this.gender === "female") {
-      this.mercury = (78 - this.mercuryAge);
-      this.venus = (78 - this.venusAge);
-      this.mars = (78 - this.marsAge);
-      this.jupiter = (78 - this.jupiter);
+      this.mercury = (78 - this.mercuryAge());
+      this.venus = (78 - this.venusAge());
+      this.mars = (78 - this.marsAge());
+      this.jupiter = (78 - this.jupiterAge());
       this.life = this.lifeExpectancy - this.earth;
-    } else {
-      this.mercury = (71 - this.mercuryAge);
-      this.venus = (71 - this.venusAge);
-      this.mars = (71 - this.marsAge);
-      this.jupiter = (71 - this.jupiter);
+      return this.life;
+    } else if (this.gender === "male") {
+      this.mercury = (71 - this.mercuryAge());
+      this.venus = (71 - this.venusAge());
+      this.mars = (71 - this.marsAge());
+      this.jupiter = (71 - this.jupiterAge());
       this.life = this.lifeExpectancy - this.earth;
+      return this.life;
     }
   }
 }
-
