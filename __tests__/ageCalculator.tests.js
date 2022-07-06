@@ -37,7 +37,7 @@ describe('ageCalculator', () => {
     expect(male.lifeExpect()).toEqual(46);
   });
 
-  test('should calculate the time a female has lived passed lifeExpect on mercury', () => {
+  test('should calculate the time a female has lived passed lifeExpect on all the planets', () => {
     let female = new ageCalculator(25, "female");
     female.deathInYears()
     console.log(female);
@@ -45,5 +45,15 @@ describe('ageCalculator', () => {
     expect(female.venus).toEqual(38);
     expect(female.mars).toEqual(65);
     expect(female.jupiter).toEqual(76);
+  });
+
+  test('should calculate the time a male has lived passed lifeExpect on all the planets', () => {
+    let male = new ageCalculator(25, "male");
+    male.deathInYears()
+    console.log(male);
+    expect(male.mercury).toEqual(-29);
+    expect(male.venus).toEqual(38);
+    expect(male.mars).toEqual(65);
+    expect(male.jupiter).toEqual(76);
   });
 });
